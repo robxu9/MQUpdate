@@ -1,0 +1,8 @@
+name: MQUpdate
+main: com.theminequest.MQUpdate.MQUpdate
+version: 0.1
+
+commands:
+   mqupdate:
+      description: Check for (and update) MineQuest
+      usage: /<command> (update)

@@ -18,6 +18,7 @@ package com.theminequest.MQUpdate;
  */
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -43,7 +44,7 @@ public class MQUpdateCommandExecutor implements CommandExecutor {
         	Bukkit.getScheduler().scheduleAsyncDelayedTask(plugin, new Runnable(){
 				@Override
 				public void run() {
-					sender.sendMessage(plugin.checkforUpdate());
+					sender.sendMessage(ChatColor.YELLOW + plugin.checkforUpdate());
 				}
         	});
         	return true;

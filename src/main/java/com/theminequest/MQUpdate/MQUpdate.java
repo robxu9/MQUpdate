@@ -62,11 +62,11 @@ public class MQUpdate extends JavaPlugin {
 				thisversion=str;
 			}
 			in.close();
-			return "The latest build of MineQuest is " + thisversion + ". Sound right?";
+			return "The latest build of MineQuest is " + thisversion + ": http://goo.gl/3kBXr";
 		} catch (MalformedURLException e) {
 			return "Can't check for updates :(";
 		} catch (IOException e) {
-			return "Wtf? Can't do any IO operations? Does I haz perms?";
+			return "Wtf? Can't do any IO operations? Does I haz perms or an internet connection?";
 		}
 	}
 }
